@@ -22,6 +22,7 @@ func reverseByte(input byte) byte {
 	return input>>4 | input<<4
 }*/
 
+// Checksum returns CRC64 checksum for given parameters
 func Checksum(data []byte, poly uint64, init uint64, xorout uint64) uint64 {
 	var crc uint64 = init
 	var bit uint64
